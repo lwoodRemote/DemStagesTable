@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <title>Dementia Progression</title>
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        
+    <link href = "https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel = "stylesheet">
+            
+    <link rel = "stylesheet" href="table.css" type="text/css">
+
+    <link rel="stylesheet" href="readmore_popups.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+      
+  </head>
+  
+  <body>
+    
+    <main>
+
+      <!-- <button id = "more_one_btn"> Read More > </button> </td> -->
+
+      <table style="width: 100%;">
+        
+        <colgroup>
+          
+          <col span="1" id = 'col1'>
+
+          <col span="1" id = 'col2'>
+
+          <col span="1" id = 'col3'>
+
+          <col span="1" id = 'col4'>
+
+          <col span="1" id = 'col5'>
+
+        </colgroup>
+
+
+        <tr>
+
+          <th></th>
+
+          <th> STAGE 1 <br> Cognitive Impairment </th>
+
+          <th> STAGE 2 <br> Early Stages </th>
+
+          <th> STAGE 3 <br> Middle Stages </th>
+
+          <th> STAGE 4 <br> Late Stages </th>
+
+        </tr>
+
+
+        <tr class = "rowborder">
+
+          <td class = "headcol"> Memory Impairments <br> <button id = "memory_btn" onclick = 'open_pop(), readmore_memory()'> Read More </button> </td>
+
+          <td> Forgetfulness and misplaced items </td>
+
+          <td> Repeating themselves and inability to do arithmetic or read  </td>
+          
+          <td> Unable to dress unassisted, no name recognition, loss of spatial awareness </td>
+          
+          <td> No short term memory, some long term memory, if any, no facial recognition </td>
+
+        </tr>
+
+
+        <tr class = "rowborder">
+
+          <td class = "headcol"> Speech Impairments <br> <button id = "speech_btn" onclick = 'open_pop(), readmore_speech()'> Read More </button> </td>
+
+          <td> Slowed speech </td>
+
+          <td> Substituting words and incomplete sentences </td>
+
+          <td> Speech may be incomprehensible </td>
+
+          <td> Non-verbal communication </td>
+
+        </tr>
+
+
+        <tr class = "rowborder">
+
+          <td class = "headcol"> Physical Impairments <br> <button id = "physical_btn" onclick = 'open_pop(), readmore_physical()'> Read More </button> </td>
+
+          <td> Gait impairment, poor coordination </td>
+
+          <td> Parkisonism (often associated with Lewy Body dementia), clumsiness/falls, poor coordination </td>
+          
+          <td> Visual impairment: Depth and contrast perception, severely decreased motor skills </td>
+          
+          <td> Incontinence, mobility issues, parkisonism (often associated with Lewy Body dementia), difficulties eating, swallowing, drinking </td>
+
+        </tr>
+
+
+        <tr class = "rowborder">
+
+          <td class = "headcol"> Behavioural Changes <br> <button id = "behaviour_btn" onclick = 'open_pop(), readmore_behaviour()'> Read More </button> </td>
+
+          <td> Depression, lack of personal care, collecting/hoarding </td>
+
+          <td> Walking with purpose, delusion/paranoia, confusion </td>
+
+          <td> Walking with purpose/anxiety, hallucinations/paranoia, sleep disturbances </td>
+
+          <td> May lack the ability to fully control their body </td>
+
+        </tr>
+
+
+
+        <tr>
+
+          <td class = "headcol"> Emotional Instability <br> <button id = "emotion_btn" onclick = 'open_pop(), readmore_emotion()'> Read More </button> </td>
+
+          <td> Agitation, mood swings </td>
+
+          <td> Anxiety, agitation, mood swings </td>
+
+          <td> Apathy, aggression </td>
+
+          <td> Aggression, mood swings </td>
+
+        </tr>
+
+      </table>
+
+
+      <div id = "popup_display" class = "popup_block">
+            
+        <div class = "popup_content">
+
+          <button id = "closeup_btn" onclick = 'close_pop()'> <i class="far fa-times-circle"></i>Close</button>
+
+          
+
+          <article>
+
+          
+            <section>
+              
+              <p id = "int_00"> art01 text01 </p>
+
+              <br>
+            
+            </section>
+
+
+            
+            <section>
+                
+              <h2 id = "sh_01" class = "subheads"> art02 subhead02 </h2>
+              
+              <p id = "txt_01" class = "text"> art02 text02 </p>
+
+              <br>
+            
+            </section>
+            
+            
+
+            <section>
+                
+              <h2 id = "sh_02" class = "subheads"> art03 subhead03 </h2>
+              
+              <p id = "txt_02" class = "text"> art03 text03 </p> 
+              
+              <br>
+            
+            </section>
+            
+
+            
+            <section>
+                
+              <h2 id = "sh_03" class = "subheads"> art04 subhead04 </h2>
+              
+              <p id = "txt_03" class = "text"> art04 text04 </p> 
+              
+              <br>
+            
+            </section>
+
+
+            <section>
+                              
+              <h2 id = "sh_04" class = "subheads"> art05 subhead05 </h2>
+              
+              <p id = "txt_04" class = "text"> art05 text05 </p> 
+                            
+              <br>
+            
+            </section>
+        
+        </article>
+
+
+        
+        </div>
+      
+      </div>
+
+    </main>
+
+    <script src="../Dementia-stages-table/script.js" type="text/javascript"></script>
+  
+  </body>
